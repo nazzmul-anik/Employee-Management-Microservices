@@ -1,6 +1,4 @@
-package com.employee.exception;
-
-import org.springframework.http.HttpStatus;
+package com.auth.exception;
 
 public class CustomException extends RuntimeException {
     private final int status;

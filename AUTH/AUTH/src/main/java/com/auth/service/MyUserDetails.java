@@ -1,4 +1,4 @@
 package com.auth.service;
 
-public class MyUserDetails {
+public interface MyUserDetails {
 }

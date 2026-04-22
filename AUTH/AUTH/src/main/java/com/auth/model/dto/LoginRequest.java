@@ -1,4 +1,9 @@
 package com.auth.model.dto;
 
-public class loginRequest {
+import lombok.Data;
+
+@Data
+public class LoginRequest {
+    private String username;
+    private String password;
 }
