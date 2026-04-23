@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="EUREKA-SERVER" />
         <module name="AUTH" />
+        <module name="API-GATEWAY" />
       </profile>
       <profile name="Annotation profile for EMPLOYEE" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -25,6 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ADDRESS" options="-parameters" />
+      <module name="API-GATEWAY" options="-parameters" />
       <module name="AUTH" options="-parameters" />
       <module name="EMPLOYEE" options="-parameters" />
       <module name="EUREKA-SERVER" options="-parameters" />
