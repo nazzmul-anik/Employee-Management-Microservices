@@ -1,4 +1,4 @@
-package com.auth.exception;
+package com.apiGateway.exception;
 
 import lombok.Getter;
 import lombok.Setter;

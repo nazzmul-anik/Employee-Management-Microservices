@@ -1,4 +1,4 @@
-package com.auth.exception;
+package com.apiGateway.exception;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
@@ -11,5 +11,9 @@ public class BadRequestException extends RuntimeException{
     public BadRequestException(String message) {
         this.message = message;
         this.status = HttpStatus.BAD_REQUEST;
+    }
+    public BadRequestException(String message,  HttpStatus status) {
+        this.message = message;
+        this.status = status;
     }
 }
