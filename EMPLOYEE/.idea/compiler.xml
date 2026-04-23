@@ -11,15 +11,24 @@
         <module name="AUTH" />
         <module name="API-GATEWAY" />
       </profile>
-      <profile name="Annotation profile for EMPLOYEE" enabled="true">
+      <profile name="Annotation profile for ADDRESS" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
         </processorPath>
-        <module name="EMPLOYEE" />
         <module name="ADDRESS" />
+      </profile>
+      <profile name="Annotation profile for EMPLOYEE" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
+        </processorPath>
+        <module name="EMPLOYEE" />
       </profile>
     </annotationProcessing>
   </component>
