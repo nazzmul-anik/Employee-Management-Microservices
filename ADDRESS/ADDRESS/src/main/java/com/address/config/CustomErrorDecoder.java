@@ -1,11 +1,13 @@
 package com.address.config;
 
+import com.address.exception.BadRequestException;
 import com.address.exception.CustomException;
 import com.address.exception.ErrorDecoderResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import feign.Response;
 import feign.codec.ErrorDecoder;
+import org.springframework.http.HttpStatus;
 
 
 import java.io.IOException;
@@ -23,6 +25,10 @@ public class CustomErrorDecoder implements ErrorDecoder {
         int httpStatus = response.status();
         if(response.body() == null){
             return new CustomException("No response from employee service: ", httpStatus);
+        }
+
+        if(httpStatus == 503){
+            return new BadRequestException("Employee Service is down. Please try again later.", HttpStatus.SERVICE_UNAVAILABLE);
         }
 
         try(InputStream is = response.body().asInputStream()){
