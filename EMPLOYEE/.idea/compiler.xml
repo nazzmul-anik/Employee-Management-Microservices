@@ -9,10 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="EUREKA-SERVER" />
         <module name="API-GATEWAY" />
+        <module name="CONFIG-SERVER" />
         <module name="COMMON-LIB" />
         <module name="AUTH" />
       </profile>
-      <profile name="Annotation profile for ADDRESS" enabled="true">
+      <profile name="Annotation profile for EMPLOYEE" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -30,6 +31,7 @@
       <module name="API-GATEWAY" options="-parameters" />
       <module name="AUTH" options="-parameters" />
       <module name="COMMON-LIB" options="" />
+      <module name="CONFIG-SERVER" options="-parameters" />
       <module name="EMPLOYEE" options="-parameters" />
       <module name="EUREKA-SERVER" options="-parameters" />
     </option>
