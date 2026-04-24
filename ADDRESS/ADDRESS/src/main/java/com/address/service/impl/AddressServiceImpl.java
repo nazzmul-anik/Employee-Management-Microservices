@@ -1,13 +1,13 @@
 package com.address.service.impl;
 
 import com.address.client.EmployeeClient;
-import com.address.exception.ResourceNotFoundException;
 import com.address.model.dto.AddressDTO;
 import com.address.model.dto.AddressRequest;
 import com.address.model.dto.EmployeeDTO;
 import com.address.model.entity.Address;
 import com.address.repository.AddressRepository;
 import com.address.service.AddressService;
+import com.commonlib.exception.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;

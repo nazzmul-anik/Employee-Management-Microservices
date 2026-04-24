@@ -12,7 +12,7 @@
         <module name="COMMON-LIB" />
         <module name="AUTH" />
       </profile>
-      <profile name="Annotation profile for EMPLOYEE" enabled="true">
+      <profile name="Annotation profile for ADDRESS" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
