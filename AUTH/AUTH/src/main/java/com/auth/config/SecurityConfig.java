@@ -43,9 +43,4 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration){
         return configuration.getAuthenticationManager();
     }
-
-//    @Bean
-//    public UserDetailsService myUserDetailsService(){
-//        return new MyUserDetailsServiceImpl();
-//    }
 }

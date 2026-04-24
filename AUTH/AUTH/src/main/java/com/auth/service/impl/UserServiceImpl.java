@@ -1,6 +1,5 @@
 package com.auth.service.impl;
 
-import com.auth.exception.BadRequestException;
 import com.auth.model.dto.JwtTokenResponse;
 import com.auth.model.dto.LoginRequest;
 import com.auth.model.dto.SignupRequest;
@@ -9,6 +8,7 @@ import com.auth.model.entity.User;
 import com.auth.repository.UserRepository;
 import com.auth.service.UserService;
 import com.auth.util.JwtUtil;
+import com.commonlib.exception.BadRequestException;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.AuthenticationManager;
