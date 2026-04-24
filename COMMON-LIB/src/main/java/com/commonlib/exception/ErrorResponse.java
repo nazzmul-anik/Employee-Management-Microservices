@@ -1,4 +1,4 @@
-package com.employee.exception;
+package com.commonlib.exception;
 
 import lombok.Getter;
 import lombok.Setter;

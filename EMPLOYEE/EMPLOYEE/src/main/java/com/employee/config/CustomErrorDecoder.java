@@ -1,8 +1,7 @@
 package com.employee.config;
 
-import com.employee.exception.CustomException;
-import com.employee.exception.ErrorDecoderResponse;
-import com.employee.exception.ErrorResponse;
+import com.commonlib.exception.CustomException;
+import com.commonlib.exception.ErrorDecoderResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import feign.Response;

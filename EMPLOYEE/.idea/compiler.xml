@@ -8,17 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="EUREKA-SERVER" />
-        <module name="AUTH" />
         <module name="API-GATEWAY" />
-      </profile>
-      <profile name="Annotation profile for ADDRESS" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
-        </processorPath>
-        <module name="ADDRESS" />
+        <module name="COMMON-LIB" />
+        <module name="AUTH" />
       </profile>
       <profile name="Annotation profile for EMPLOYEE" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -26,9 +18,9 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
         </processorPath>
         <module name="EMPLOYEE" />
+        <module name="ADDRESS" />
       </profile>
     </annotationProcessing>
   </component>
@@ -37,6 +29,7 @@
       <module name="ADDRESS" options="-parameters" />
       <module name="API-GATEWAY" options="-parameters" />
       <module name="AUTH" options="-parameters" />
+      <module name="COMMON-LIB" options="" />
       <module name="EMPLOYEE" options="-parameters" />
       <module name="EUREKA-SERVER" options="-parameters" />
     </option>

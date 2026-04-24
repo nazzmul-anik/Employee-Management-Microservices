@@ -1,6 +1,5 @@
 package com.employee.controller;
 
-import com.employee.exception.MissingParameterException;
 import com.employee.model.dto.EmployeeDTO;
 import com.employee.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
