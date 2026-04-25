@@ -4,6 +4,9 @@ A **production-style microservices architecture** built using **Spring Boot, Spr
 
 ---
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/75ab5f52-7110-4aaf-a3e0-f6661560ac3d" />
+
+
 ## 🚀 Overview
 
 This project demonstrates a **fully decoupled microservices system** with:
